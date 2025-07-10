@@ -132,6 +132,9 @@ if __name__ == "__main__":
 
     import cuda_malloc
 
+if 'torch' in sys.modules:
+    logging.warning("WARNING: Potential Error in code: Torch already imported, torch should never be imported before this point.")
+
 import comfy.utils
 
 import execution
