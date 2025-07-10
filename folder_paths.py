@@ -111,7 +111,7 @@ def set_input_directory(input_dir: str) -> None:
     global input_directory
     input_directory = input_dir
 
-def get_output_directory() -> str:
+def get_output_directory(*args, **kwargs) -> str:
     global output_directory
     return output_directory
 
